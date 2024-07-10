@@ -24,11 +24,11 @@ function Navbar() {
 function Logo() {
   return (
     <div className="flex gap-2 items-center">
-      <div className={`bg-[#${mainColor}] p-[6px] rounded-md`}>
+      <div className={`bg-[#8338ec] p-[6px] rounded-md`}>
         <DataObjectIcon sx={{ fontSize: 27, color: "white" }} />
       </div>
       <div className="flex gap-1 text-[19px]">
-        <span className={`font-bold text-[#${mainColor}]`}>Snippet</span>
+        <span className={`font-bold text-[#8338ec]`}>Snippet</span>
         <span className="text-slate-600">Up</span>
       </div>
     </div>
@@ -43,7 +43,7 @@ function Buttons() {
         {userId ? (
           <Link href="/my-notes">
             <button
-              className={`max-sm:w-full bg-[#${mainColor}] p-[8px] px-6 text-sm text-white rounded-md`}
+              className={`max-sm:w-full bg-[#8338ec] p-[8px] px-6 text-sm text-white rounded-md`}
             >
               Access To the App
             </button>
@@ -52,13 +52,13 @@ function Buttons() {
           <div className="flex gap-2 max-sm:mt-8 max-sm:w-full max-sm:flex-col">
             <Link href="/sign-in" >
             <button
-              className={`max-sm:w-full bg-[#${mainColor}] p-[8px] px-6 text-sm text-white rounded-md`}
+              className={`max-sm:w-full bg-[#8338ec] p-[8px] px-6 text-sm text-white rounded-md`}
             >
               Sign In
             </button>
             </Link>
             <button
-              className={`text-sm border border-[#${mainColor}] text-[#${mainColor}] \ hover:bg-[#${mainColor}] hover:text-white p-[8px] px-6 rounded-md`}
+              className={`text-sm border border-[#8338ec] text-[#8338ec] hover:bg-[#8338ec] hover:text-white p-[8px] px-6 rounded-md`}
             >
               <Link href="/sign-up">Sign Up</Link>
             </button>
