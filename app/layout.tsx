@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <ClerkProvider>
+        <body className={poppins.className}>{children}</body>
+      </ClerkProvider>
     </html>
   );
 }
