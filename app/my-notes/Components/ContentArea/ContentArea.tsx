@@ -40,7 +40,7 @@ function NotesArea(){
     const {openContentNoteObject: {openContentNote}} = useGlobalContext();
     const {isMobileObject: {isMobile,setIsMobile}} = useGlobalContext();
     return(
-        <div className="mt-5 border flex gap-2">
+        <div className="mt-5 flex gap-2">
             <div className={`${openContentNote ? `${isMobile ? "w-full":"w-[50%]"}` : "w-full" }`}>
             <SwiperSelection />
             <AllNotesSelection />
