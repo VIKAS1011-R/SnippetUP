@@ -58,7 +58,7 @@ function Buttons() {
             </button>
             </Link>
             <button
-              className={`text-sm border border-[#8338ec] text-[#8338ec] hover:bg-[#8338ec] hover:text-white p-[8px] px-6 rounded-md`}
+              className={`text-sm border border-[#8338ec] text-[#8338ec]  hover:bg-[#8338ec] hover:text-white p-[8px] px-6 rounded-md`}
             >
               <Link href="/sign-up">Sign Up</Link>
             </button>
@@ -74,7 +74,7 @@ function CTASection() {
     <div className="flex flex-col mx-16 items-center mt-[120px] gap-6">
       <h2 className="font-bold text-2xl text-center text-black">
         Organize Your Code Snippets
-        <span className={`text-[#${mainColor}]`}> Efficiently!</span>
+        <span className={`text-[#8338ec]`}> Efficiently!</span>
       </h2>
       <p className="text-center text-sm w-[450px] max-sm:w-full text-slate-500">
         With our advanced tagging and seach features, you can quickly find the
