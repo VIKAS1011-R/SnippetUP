@@ -30,7 +30,7 @@ function SingleNote(){
     const {darkModeObject: {darkMode}} = useGlobalContext();
     const {openContentNoteObject:{openContentNote,setOpencontentNote}} = useGlobalContext();
     return(
-        <div className={`${darkMode[1].isSelected ? "bg-slate-900 text-white" : "bg-white" } ${openContentNote ? "w-full": "w-[33%]"} max-sm:w-full rounded-md py-4`}>
+        <div className={`${darkMode[1].isSelected ? "bg-slate-900 text-white border-white" : "bg-white border-black" } ${openContentNote ? "w-full": "w-[33%]"} max-sm:w-full border  rounded-md py-4`}>
             <NoteHeader/>
             <NoteDate/>
             <NoteTags/>
