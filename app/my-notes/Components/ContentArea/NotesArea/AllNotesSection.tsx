@@ -10,7 +10,7 @@ import { useGlobalContext } from "@/ContextApi";
 
 function AllNotesSelection(){
     return(
-        <div className="mt-5 flex flex-wrap gap-1">
+        <div className="mt-5 flex flex-wrap">
             <SingleNote />
             <SingleNote />
             <SingleNote />
